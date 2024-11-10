@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfpbet2y7gmt2"]
+
+[ext_resource type="Texture2D" uid="uid://dv5ks4km3pa5r" path="res://assets/Dungeon Ruins Tileset/Dungeon Ruins Tileset Day.png" id="1_emyie"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghciv"]
+size = Vector2(16, 48)
+
+[node name="wall" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_emyie")
+region_enabled = true
+region_rect = Rect2(80.1311, 80.0367, 16.0228, 47.1528)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ghciv")
