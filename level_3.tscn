@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfutifwh7lxa6"]
+
+[ext_resource type="PackedScene" uid="uid://4njkgnky366i" path="res://scenes/player.tscn" id="1_c8pkp"]
+
+[node name="level_3" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_c8pkp")]
+position = Vector2(6, -69)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-1, -13)
+zoom = Vector2(4, 4)
+limit_left = -400
+limit_top = -100000000
+limit_right = 650
+limit_bottom = 20
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
